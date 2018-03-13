@@ -54,8 +54,9 @@ def subsamp(y,col,fold=3):
         for j in range(fold):
             out[j] += list(perm_index[r[j]:r[j+1]])
     return out
+
 """
-stratified sampling (not considering the outcome distribution)
+sampling (not considering the outcome distribution)
 y: dataframe
 col: the column used for stratification
 """
